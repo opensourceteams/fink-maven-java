@@ -1,7 +1,7 @@
 # flink 开发笔记
 
 
-## 创建flink maven java 项目
+### 创建flink maven java 项目
 
 ```aidl
 mvn archetype:generate \
@@ -17,3 +17,5 @@ mvn archetype:generate \
 
 ```
 
+### Java 版Flink WordCount单词统计
+- https://github.com/opensourceteams/fink-maven-java/blob/master/md/wordCount-java.md
