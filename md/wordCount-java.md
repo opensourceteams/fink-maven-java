@@ -1,5 +1,8 @@
 # Flink worldCount 体验java版
 
+## 源码
+- github: https://github.com/opensourceteams/fink-maven-java
+
 ## 描述
 - nc命令发送数据，Flink 接收数据，并对接数据统计单词总数
 - 一共分为四步

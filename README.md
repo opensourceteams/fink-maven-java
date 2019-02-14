@@ -9,7 +9,7 @@ mvn archetype:generate \
     -DarchetypeArtifactId=flink-quickstart-java \
     -DarchetypeVersion=1.7.1 \
     -DgroupId=com.opensourceteams \
-    -DartifactId=flink-quickstart \
+    -DartifactId=flink-maven-java \
     -Dversion=0.1 \
     -Dpackage=com.module.flink.example.quickstart \
     -DinteractiveMode=false
