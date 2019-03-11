@@ -1,35 +1,8 @@
-package com.module.flink.example.dataset.wordcount;
+package com.module.flink.common.util;
 
-import org.apache.flink.api.common.functions.FlatMapFunction;
-import org.apache.flink.api.java.ExecutionEnvironment;
-import org.apache.flink.api.java.operators.DataSource;
 import org.apache.flink.configuration.Configuration;
-import scala.Tuple2;
 
-public class FileRun {
-
-    public static void main(String[] args) throws Exception {
-
-
-        ExecutionEnvironment environment =ExecutionEnvironment.createLocalEnvironment(getConfiguration(true));
-
-        DataSource<String> dataSource = environment.readTextFile("/opt/n_001_workspaces/bigdata/flink/flink-maven-java/src/main/resources/data/line.txt");
-
-        dataSource.flatMap((FlatMapFunction<String, Tuple2<String,Integer>>) (value, out) -> {
-            for (String word : value.split(" ")) {
-                out.collect(new Tuple2<>(word, 1));
-            }
-        }).print();
-
-
-
-
-    }
-
-
-
-
-
+public class ConfigurationUtil {
 
     public static Configuration getConfiguration(Boolean isDebug){
 
